@@ -218,6 +218,9 @@ namespace Community.PowerToys.Run.Plugin.Everything
                             break;
                     }
                 }
+
+                // ATW¶¨ÖÆ
+                AtwExtendTools.Add(contextMenus, record, isFile);
             }
 
             return contextMenus;

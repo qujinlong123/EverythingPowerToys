@@ -81,7 +81,8 @@ namespace Community.PowerToys.Run.Plugin.Everything
                     Debugger.Write($"\r\nERROR: {e.Message}\r\n{e.StackTrace}\r\n");
             }
 
-            Debugger.Write("  Checking Update...Done");
+            if (s.Log > LogLevel.None)
+                Debugger.Write("  Checking Update...Done");
         }
     }
 }
