@@ -1,0 +1,21 @@
+
+# ######################
+# 代码修改内容
+# ######################
+
+# 1.去掉检查升级的日志
+文件：Update.cs
+修改内容：在文件最后Debugger.Write("  Checking Update...Done");之前增加判断条件if (s.Log > LogLevel.None)
+
+# 2.增加扩展功能处理文件
+文件：AtwExtendTools.cs
+
+# 3.调用扩展代码
+文件：ContextMenuLoader.cs
+修改内容：在文件最后部分增加 AtwExtendTools.Add(contextMenus, record, isFile);
+
+# 4.修改项目配置文件
+编辑 Community.PowerToys.Run.Plugin.Everything.csproj 文件
+或者 VistualStdio 的项目-属性
+注释下面这行代码：
+:: certUtil -hashfile .\bin\EverythingPT-$(Version)-x64+ARM64.exe SHA256 >> .\bin\CHECKSUM.txt

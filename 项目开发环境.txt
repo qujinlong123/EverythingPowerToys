@@ -1,0 +1,76 @@
+
+# https://senpai.club/how-to-create-a-powertoys-run-plugin/
+# https://conductofcode.io/post/creating-custom-powertoys-run-plugins/
+# https://github.com/microsoft/PowerToys/blob/main/doc/thirdPartyRunPlugins.md
+# https://github.com/lin-ycv/EverythingPowerToys/wiki
+# https://github.com/microsoft/PowerToys/tree/main/doc/devdocs
+# https://learn.microsoft.com/en-us/windows/apps/design/style/segoe-ui-symbol-font
+
+# Plugins安装目录
+%LOCALAPPDATA%\Microsoft\PowerToys\PowerToys Run\Plugins
+
+# ######################
+# 新建项目
+# ######################
+
+# 1.拉取PowerToys代码
+git clone https://github.com/microsoft/PowerToys.git
+cd PowerToys
+git submodule update --init --recursive
+
+# 2.拉取插件代码
+cd src/modules/launcher/Plugins
+# git clone https://github.com/lin-ycv/EverythingPowerToys.git
+git clone git@github.com:qujinlong123/EverythingPowerToys.git
+
+# 3.Visual Studio 打开 PowerToys项目
+PowerToys.sln
+
+# 4.将插件添加到项目工程里面
+modules\launcher\Plugins
+
+# ######################
+# 提交代码
+# ######################
+
+git status
+
+# 提交到本地仓库
+git add .
+git commit -m "注释"
+等同于
+git commit -am "注释"
+
+# 将本地仓库代码推送到远程仓库
+git push
+
+# ######################
+# 合并源头代码
+# ######################
+
+cd EverythingPowerToys
+git remote add upstream https://github.com/lin-ycv/EverythingPowerToys.git
+git remote -v
+
+# 取源头代码到本地仓库，并进行合并
+git fetch upstream
+git branch -a
+git merge upstream/master
+
+# 将本地仓库代码推送到远程仓库
+git push origin master
+
+# ######################
+# 取新版PowerToys代码
+# ######################
+
+# 1.更新代码之前取消本地代码变更
+git restore PowerToys.sln
+
+# 2.拉取更新代码
+git pull
+
+# 3.将插件添加到项目工程里面
+modules\launcher\Plugins
+
+# 4.编译
