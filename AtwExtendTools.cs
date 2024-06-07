@@ -14,15 +14,15 @@ namespace Community.PowerToys.Run.Plugin.Everything
 {
     internal sealed class AtwExtendTools
     {
-        public static void Add(List<ContextMenuResult> contextMenus, SearchResult record, bool isFile)
+        public static void Add(List<ContextMenuResult> contextMenus, SearchResult record)
         {
-            AddEclipseMenu(contextMenus, record, isFile);
+            AddEclipseMenu(contextMenus, record);
         }
 
-        private static void AddEclipseMenu(List<ContextMenuResult> contextMenus, SearchResult record, bool isFile)
+        private static void AddEclipseMenu(List<ContextMenuResult> contextMenus, SearchResult record)
         {
             // 只对目录有效
-            if (isFile) return;
+            if (record.File) return;
 
             // 目录下是否有Exclipse的相关文件
             if (!Path.Exists(Path.Combine(record.Path, "pom.xml"))) return;

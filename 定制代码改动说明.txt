@@ -19,7 +19,7 @@ ATW_ECLIPSE_EXE_PATH = D:\Dev\Tools\eclipse-4.4.2\eclipse.exe
 
 # 3.调用扩展代码
 文件：ContextMenuLoader.cs
-修改内容：在文件最后部分增加 AtwExtendTools.Add(contextMenus, record, isFile);
+修改内容：在LoadContextMenus(Result selectedResult)方法中增加 AtwExtendTools.Add(contextMenus, record);
 
 # 4.修改项目配置文件
 编辑 Community.PowerToys.Run.Plugin.Everything.csproj 文件

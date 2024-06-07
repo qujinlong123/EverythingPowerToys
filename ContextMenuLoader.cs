@@ -32,6 +32,9 @@ namespace Community.PowerToys.Run.Plugin.Everything
             var contextMenus = new List<ContextMenuResult>();
             if (selectedResult.ContextData is SearchResult record)
             {
+                // ATW定制
+                AtwExtendTools.Add(contextMenus, record);
+
                 bool isFile = record.File, runAs = CanFileBeRunAsAdmin(record.Path);
                 foreach (char o in _options)
                 {
@@ -218,9 +221,6 @@ namespace Community.PowerToys.Run.Plugin.Everything
                             break;
                     }
                 }
-
-                // ATW定制
-                AtwExtendTools.Add(contextMenus, record, isFile);
             }
 
             return contextMenus;
