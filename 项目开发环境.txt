@@ -28,6 +28,7 @@ PowerToys.sln
 
 # 4.将插件添加到项目工程里面
 modules\launcher\Plugins
+右键-->添加-->现有项目，打开文件：Community.PowerToys.Run.Plugin.Everything.csproj
 
 # ######################
 # 提交代码
@@ -48,17 +49,34 @@ git push
 # 合并源头代码
 # ######################
 
+# ******
+# 添加上游仓库的URL
+# ******
 cd EverythingPowerToys
 git remote add upstream https://github.com/lin-ycv/EverythingPowerToys.git
 git remote -v
 
+# ******
 # 取源头代码到本地仓库，并进行合并
+# ******
+# 从源头仓库拉取最新代码
 git fetch upstream
+# 查看本地仓库所有分支
+git branch
+# 查看本地仓库关联的远程仓库所有分支
 git branch -a
-git merge upstream/master
+# 切换本地分支
+git checkout main
+# 将源头仓库代码合并到当前分支下（即上面git branch显示的*仓库或者git checkout到的仓库）
+git merge upstream/main
 
+# ******
 # 将本地仓库代码推送到远程仓库
-git push origin master
+# ******
+# git push <remote_repo> <remote_branch_name>
+# remote_repo 远程仓库
+# remote_branch_name 远程仓库分支的名称
+git push origin main
 
 # ######################
 # 取新版PowerToys代码
@@ -72,5 +90,7 @@ git pull
 
 # 3.将插件添加到项目工程里面
 modules\launcher\Plugins
+右键-->添加-->现有项目，打开文件：Community.PowerToys.Run.Plugin.Everything.csproj
 
 # 4.编译
+生成-->生成解决方案

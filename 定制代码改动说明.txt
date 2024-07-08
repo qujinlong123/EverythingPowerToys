@@ -11,6 +11,7 @@ ATW_ECLIPSE_EXE_PATH = D:\Dev\Tools\eclipse-4.4.2\eclipse.exe
 # ######################
 
 # 1.去掉检查升级的日志
+# ** 该项定制已取消，不需要再处理，因为主版本已修正。
 文件：Update.cs
 修改内容：在文件最后Debugger.Write("  Checking Update...Done");之前增加判断条件if (s.Log > LogLevel.None)
 
@@ -23,6 +24,6 @@ ATW_ECLIPSE_EXE_PATH = D:\Dev\Tools\eclipse-4.4.2\eclipse.exe
 
 # 4.修改项目配置文件
 编辑 Community.PowerToys.Run.Plugin.Everything.csproj 文件
-或者 VistualStdio 的项目-属性
+或者 VistualStdio 的插件项目-属性-生成后的事件
 注释下面这行代码：
 :: certUtil -hashfile .\bin\EverythingPT-$(Version)-x64+ARM64.exe SHA256 >> .\bin\CHECKSUM.txt

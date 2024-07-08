@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -118,90 +118,111 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="clipboard_failed" xml:space="preserve">
-    <value>无法设置剪贴板中的文本</value>
+    <value>No se pudo meter texto en el portapapeles</value>
+  </data>
+  <data name="Context" xml:space="preserve">
+    <value>Menú contextual</value>
   </data>
   <data name="Context_Description" xml:space="preserve">
-    <value>配置选单选项与顺序
-0_打开所在文件夹、1_以管理员身分运行、2_以不同的使用者身分运行、3_复制、4_复制路径、5_在控制台中开启</value>
+    <value>Configurar las opciones del menú contextual y su orden.
+0_Abrir carpeta, 1_Ejecutar como administrador, 2_Ejecutar como usuario, 3_Copiar, 4_Copiar ruta, 5_Abrir en el terminal</value>
   </data>
   <data name="copy_file" xml:space="preserve">
-    <value>复制</value>
+    <value>Copiar </value>
   </data>
   <data name="copy_path" xml:space="preserve">
-    <value>复制路径</value>
+    <value>Copiar ruta </value>
+  </data>
+  <data name="copy_shortcut" xml:space="preserve">
+    <value>(Ctrl+C)</value>
+  </data>
+  <data name="copy_shortcutAlt" xml:space="preserve">
+    <value>(Ctrl+Alt+C)</value>
+  </data>
+  <data name="EnvVar" xml:space="preserve">
+    <value>Variables de entorno</value>
   </data>
   <data name="EnvVar_Description" xml:space="preserve">
-    <value>搜索时可以使用环境变量，但会增加搜索时间</value>
-  </data>
-  <data name="EverythingPath_Description" xml:space="preserve">
-    <value>若Everything安装位置非预设的Program Files，请提供Everything64exe的位置</value>
+    <value>Expandir variables de entorno, como %appdata%, de modo que funcionen aún a costa de tiempo de consulta.</value>
   </data>
   <data name="Everything_ini" xml:space="preserve">
-    <value>是否安装了 Everything?</value>
+    <value>Instalar Everything si no está instalado</value>
   </data>
   <data name="Everything_not_running" xml:space="preserve">
-    <value>Everything 没有运行</value>
+    <value>Everything no se está ejecutando</value>
   </data>
   <data name="folder_open_failed" xml:space="preserve">
-    <value>无法打开所在文件夹</value>
+    <value>Falló la apertura de la carpeta en</value>
+  </data>
+  <data name="Match_path" xml:space="preserve">
+    <value>Coincidencia de ruta</value>
   </data>
   <data name="Match_path_Description" xml:space="preserve">
-    <value>匹配路径</value>
+    <value>Buscar ruta además de nombre de archivo/carpeta.</value>
+  </data>
+  <data name="Max" xml:space="preserve">
+    <value>Máx</value>
   </data>
   <data name="Max_Description" xml:space="preserve">
-    <value>结果中显示的最大结果数</value>
-  </data>
-  <data name="more_results" xml:space="preserve">
-    <value>显示更多结果...</value>
-  </data>
-  <data name="more_results_Subtitle" xml:space="preserve">
-    <value>在Everything主视窗里查看更多结果</value>
+    <value>El número máximo de elementos a mostrar en los resultados.</value>
   </data>
   <data name="open_containing_folder" xml:space="preserve">
-    <value>打开所在文件夹 (Ctrl+Shift+E)</value>
+    <value>Abrir carpeta contenedora (Ctrl+Shift+E)</value>
   </data>
   <data name="open_in_console" xml:space="preserve">
-    <value>在控制台中打开路径 (Ctrl+Shift+C)</value>
+    <value>Abrir ruta en terminal (Ctrl+Shift+C)</value>
   </data>
   <data name="plugin_description" xml:space="preserve">
-    <value>利用 Everything 搜索磁盘文件</value>
+    <value>Obtener resultados de búsqueda desde Everything</value>
   </data>
   <data name="plugin_name" xml:space="preserve">
     <value>Everything</value>
   </data>
-  <data name="Prefix_Description" xml:space="preserve">
-    <value>为搜索词添加固定的前缀，搜索时无需再手动输入修饰词/筛选词
-前缀与搜索词之间不会自动加入空格</value>
+  <data name="Preview" xml:space="preserve">
+    <value>Vista previa</value>
   </data>
   <data name="Preview_Description" xml:space="preserve">
-    <value>以图标形式预览文件内容，如果文件不是本地文件，可能会导致冻结</value>
+    <value>Vista previa de archivos como iconos. Puede causar bloqueos si el archivo no es local.</value>
+  </data>
+  <data name="QueryText" xml:space="preserve">
+    <value>Texto de búsqueda</value>
   </data>
   <data name="QueryText_Description" xml:space="preserve">
-    <value>选取结果时更新搜寻词，获得更多资讯，但可能会变更搜寻结果</value>
+    <value>El resultado seleccionado puede actualizar el texto de búsqueda. Ayuda a mostrar información adicional, pero podría cambiar los resultados mostrados.</value>
+  </data>
+  <data name="RegEx" xml:space="preserve">
+    <value>RegEx</value>
   </data>
   <data name="RegEx_Description" xml:space="preserve">
-    <value>RegEx 正则表达式搜索</value>
+    <value>Permitir expresiones regulares en las búsquedas. 
+Se recomenda usar expresiones regulares: en la consulta en lugar de habilitar esta opción.</value>
   </data>
   <data name="run_as_admin" xml:space="preserve">
-    <value>以管理员身份运行 (Ctrl+Shift+Enter)</value>
+    <value>Ejecutar como administrador (Ctrl+Shift+Enter)</value>
   </data>
   <data name="run_as_user" xml:space="preserve">
-    <value>以不同的使用者身份运行(Ctrl+Shift+U)</value>
+    <value>Ejecutar como un usuario diferente (Ctrl+Shift+U)</value>
+  </data>
+  <data name="Sort" xml:space="preserve">
+    <value>Ordenar</value>
   </data>
   <data name="Sort_Description" xml:space="preserve">
-    <value>设定结果排序方法</value>
+    <value>Establecer el método de ordenación de resultados.</value>
+  </data>
+  <data name="SwapCopy" xml:space="preserve">
+    <value>Copiar</value>
   </data>
   <data name="SwapCopy_Description" xml:space="preserve">
-    <value>使用 Ctrl+C 复制档案，Ctrl+Alt+C 复制路径</value>
+    <value>Establece Ctrl+C para copiar archivo/carpeta, Ctrl+Alt+C para copiar la ruta.</value>
+  </data>
+  <data name="UpdateAvailable" xml:space="preserve">
+    <value>¿Instalar la nueva versión de EverythingPowerToys?
+Si pulsas 'No' se deshabilitarán futuras notificaciones para esta versión.
+
+Instalada:		{0}
+Última:		{1}</value>
   </data>
   <data name="Updates" xml:space="preserve">
-    <value>检查是否有更新</value>
-  </data>
-  <data name="UpdatesAvailable" xml:space="preserve">
-    <value>更新EverythingPowerToys吗？
-点击 '否' 将不再收到有关此版本更新的通知
-
-安装版本：{0}
-最新版本：{1}</value>
+    <value>Comprobar actualizaciones</value>
   </data>
 </root>
