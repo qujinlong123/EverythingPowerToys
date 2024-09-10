@@ -93,9 +93,22 @@ git restore PowerToys.sln
 # 2.拉取更新代码
 git pull
 
-# 3.将插件添加到项目工程里面
+# 3.进入插件目录，拉取插件最新代码
+cd src/modules/launcher/Plugins/EverythingPowerToys
+# git remote -v
+# 从源头仓库拉取最新代码
+git fetch upstream
+# git branch
+# git branch -a
+# git checkout main
+# 将源头仓库代码合并到当前分支下（即上面git branch显示的*仓库或者git checkout到的仓库）
+git merge upstream/main
+
+# 4.将插件添加到项目工程里面
 modules\launcher\Plugins
 右键-->添加-->现有项目，打开文件：Community.PowerToys.Run.Plugin.Everything.csproj
 
-# 4.编译
+# 5.修改代码
+
+# 6.编译
 生成-->生成解决方案
