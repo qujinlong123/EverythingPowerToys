@@ -6,6 +6,11 @@
 # https://github.com/microsoft/PowerToys/tree/main/doc/devdocs
 # https://learn.microsoft.com/en-us/windows/apps/design/style/segoe-ui-symbol-font
 
+# 代码库
+https://github.com/microsoft/PowerToys
+https://github.com/lin-ycv/EverythingPowerToys
+https://github.com/qujinlong123/EverythingPowerToys
+
 # Plugins安装目录
 %LOCALAPPDATA%\Microsoft\PowerToys\PowerToys Run\Plugins
 
@@ -91,13 +96,15 @@ git push origin main
 git restore PowerToys.sln
 
 # 2.拉取更新代码
-git pull
+git fetch origin
+git tag
+git checkout ***
 
 # 3.进入插件目录，拉取插件最新代码
 cd src/modules/launcher/Plugins/EverythingPowerToys
 # git remote -v
 # 从源头仓库拉取最新代码
-git fetch upstream
+git fetch upstream 
 # git branch
 # git branch -a
 # git checkout main
@@ -112,3 +119,17 @@ modules\launcher\Plugins
 
 # 6.编译
 生成-->生成解决方案
+
+# 7.提交代码
+git add .
+git commit -m "注释"
+git push origin main
+
+# 8.创建release
+https://github.com/qujinlong123/EverythingPowerToys/releases
+Draft a new release
+  1、Choose a tag （创建一个新的tag，并使用该tag作为本release的代码）
+  2、Release title （使用tag名字）
+  3、附件
+
+

@@ -118,151 +118,139 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="clipboard_failed" xml:space="preserve">
-    <value>Fail to set text in clipboard</value>
+    <value>Impossibile copiare il testo negli appunti</value>
   </data>
   <data name="Context" xml:space="preserve">
-    <value>Context Menu</value>
+    <value>Menu contestuale</value>
   </data>
   <data name="Context_Description" xml:space="preserve">
-    <value>Configure context menu options and order.
-0_Open folder, 1_Run as Admin, 2_Run as User, 3_Copy, 4_Copy Path, 5_Open in Console, 6_Open in custom program</value>
+    <value>Configura le opzioni e l'ordine del menu contestuale.
+0_Apri cartella, 1_Esegui come Amministratore, 2_Esegui come Utente, 3_Copia, 4_Copia Percorso, 5_Apri nella Console, 6_Apri con programma esterno</value>
   </data>
   <data name="copy_file" xml:space="preserve">
-    <value>Copy </value>
+    <value>Copia </value>
   </data>
   <data name="copy_path" xml:space="preserve">
-    <value>Copy path </value>
-  </data>
-  <data name="copy_shortcut" xml:space="preserve">
-    <value>(Ctrl+C)</value>
-  </data>
-  <data name="copy_shortcutAlt" xml:space="preserve">
-    <value>(Ctrl+Alt+C)</value>
+    <value>Copia percorso </value>
   </data>
   <data name="EnvVar" xml:space="preserve">
-    <value>Enviroment Variables</value>
+    <value>Variabili di ambiente</value>
   </data>
   <data name="EnvVar_Description" xml:space="preserve">
-    <value>Expand enviroment variables, such as %appdata%, so that they work properly at the cost of query time.</value>
-  </data>
-  <data name="EverythingPath" xml:space="preserve">
-    <value>Everything64.exe</value>
+    <value>Espandi le variabili d'ambiente (es. %appdata%) in modo che funzionino correttamente, a costo di un tempo di ricerca maggiore.</value>
   </data>
   <data name="EverythingPath_Description" xml:space="preserve">
-    <value>Location of Everything.exe if it's not installed in "Program Files"</value>
+    <value>Il percorso di Everything.exe se non è installato in "Programmi".</value>
   </data>
   <data name="Everything_ini" xml:space="preserve">
-    <value>Install Everything if not installed</value>
+    <value>Installa Everything se non è installato</value>
   </data>
   <data name="Everything_not_running" xml:space="preserve">
-    <value>Everything is not running</value>
+    <value>Everything non è in esecuzione</value>
   </data>
   <data name="folder_open_failed" xml:space="preserve">
-    <value>Fail to open folder at</value>
+    <value>Impossibile aprire la cartella:</value>
   </data>
   <data name="Match_path" xml:space="preserve">
-    <value>Match Path</value>
+    <value>Ricerca percorso</value>
   </data>
   <data name="Match_path_Description" xml:space="preserve">
-    <value>Search path in additional to file/folder name.</value>
+    <value>Cerca corrispondenze nei percorsi oltre che nei nomi di file e cartelle.</value>
   </data>
   <data name="Max" xml:space="preserve">
-    <value>Max</value>
+    <value>Numero risultati</value>
   </data>
   <data name="Max_Description" xml:space="preserve">
-    <value>The maximum amount of results to display in the results.</value>
-  </data>
+    <value>Il numero massimo di elementi da mostrare nell'elenco dei risultati.</value>
+  </data> 
   <data name="more_results" xml:space="preserve">
-    <value>See more...</value>
+    <value>Vedi altro...</value>
   </data>
   <data name="more_results_Subtitle" xml:space="preserve">
-    <value>Open Everything and see the remaining results</value>
+    <value>Apri Everything e mostra tutti i risultati</value>
   </data>
   <data name="open_containing_folder" xml:space="preserve">
-    <value>Open containing folder (Ctrl+Shift+E)</value>
+    <value>Apri cartella corrispondente (Ctrl+Maiusc+E)</value>
   </data>
   <data name="open_in_console" xml:space="preserve">
-    <value>Open path in console (Ctrl+Shift+C)</value>
+    <value>Apri percorso nella console (Ctrl+Maiusc+C)</value>
   </data>
   <data name="plugin_description" xml:space="preserve">
-    <value>Get search results from Everything</value>
-  </data>
-  <data name="plugin_name" xml:space="preserve">
-    <value>Everything</value>
+    <value>Ottieni risultati di ricerca da Everything</value>
   </data>
   <data name="Prefix" xml:space="preserve">
-    <value>Query Prefix</value>
+    <value>Prefisso query</value>
   </data>
   <data name="Prefix_Description" xml:space="preserve">
-    <value>Adds prefix to all queries, so that you can always include certain filters/modifiers without typing it every time.
-Space is not added automatically between prfix and query.</value>
+    <value>Aggiungi un prefisso a tutte le query, in modo da aggiungere filtri e/o modificatori senza doverli digitare ogni volta.
+Lo spazio non viene aggiunto automaticamente tra prefisso e query.</value>
   </data>
   <data name="Preview" xml:space="preserve">
-    <value>Preview</value>
+    <value>Anteprima</value>
   </data>
   <data name="Preview_Description" xml:space="preserve">
-    <value>Preview file content as icon, may cause freezing if file is not local.</value>
+    <value>Mostra l'anteprima del file come icona, potrebbe causare blocchi se il file non è salvato in locale.</value>
   </data>
   <data name="QueryText" xml:space="preserve">
-    <value>Query Text</value>
+    <value>Testo query</value>
   </data>
   <data name="QueryText_Description" xml:space="preserve">
-    <value>Selected result can update query text. Helps display additional info, but may change display results.</value>
+    <value>Il risultato selezionato aggiorna il testo della query. Permette di visualizzare ulteriori informazioni, ma potrebbe cambiare i risultati mostrati.</value>
   </data>
   <data name="RegEx" xml:space="preserve">
-    <value>RegEx</value>
+    <value>Espressioni regolari</value>
   </data>
   <data name="RegEx_Description" xml:space="preserve">
-    <value>Enable regular expression in search.
-Recommend using regex: in query instead of enabling this option</value>
+    <value>Permette l'utilizzo di espressioni regolari nella ricerca.
+Si consiglia di utilizzare 'regex:' nella query invece di abilitare questa opzione.</value>
   </data>
   <data name="run_as_admin" xml:space="preserve">
-    <value>Run as administrator (Ctrl+Shift+Enter)</value>
+    <value>Esegui come amministratore (Ctrl+Maiusc+Invio)</value>
   </data>
   <data name="run_as_user" xml:space="preserve">
-    <value>Run as different user (Ctrl+Shift+U)</value>
+    <value>Esegui come altro utente (Ctrl+Maiusc+U)</value>
   </data>
   <data name="ShowMore" xml:space="preserve">
-    <value>Show more</value>
+    <value>Vedi altro</value>
   </data>
   <data name="ShowMore_Description" xml:space="preserve">
-    <value>Display a result that opens Everything with the current query.</value>
+    <value>Mostra un risultato che permette di aprire Everything con la query corrente.</value>
   </data>
   <data name="Sort" xml:space="preserve">
-    <value>Sort</value>
+    <value>Ordina</value>
   </data>
   <data name="Sort_Description" xml:space="preserve">
-    <value>Set result sorting method.</value>
+    <value>Stabilisce il metodo di ordinamento dei risultati.</value>
   </data>
   <data name="SwapCopy" xml:space="preserve">
-    <value>Copy</value>
+    <value>Inverti scorciatoie Copia</value>
   </data>
   <data name="SwapCopy_Description" xml:space="preserve">
-    <value>Set Ctrl+C to copy file/folder, Ctrl+Alt+C to copy path.</value>
+    <value>Usa Ctrl+C per copiare il file o la cartella, Ctrl+Alt+C per copiare il percorso.</value>
   </data>
   <data name="UpdateAvailable" xml:space="preserve">
-    <value>Install new version of EverythingPowerToys?
-Clicking 'No' will disable future notice for this version.
+    <value>Vuoi installare una nuova versione di EverythingPowerToys?
+Scegliendo 'No' disabiliterai ulteriori avvisi per questa versione.
 
-Installed:		{0}
-Latest:		{1}</value>
+Installata:		{0}
+Ultima:		{1}</value>
   </data>
   <data name="Updates" xml:space="preserve">
-    <value>Check for updates</value>
+    <value>Controlla aggiornamenti</value>
   </data>
   <data name="CustomProgram" xml:space="preserve">
-    <value>Custom Program</value>
+    <value>Programma esterno</value>
   </data>
   <data name="CustomProgram_Description" xml:space="preserve">
-    <value>Path to a external program that'll open the selected result</value>
+    <value>Il percorso del programma esterno che aprirà il risultato selezionato</value>
   </data>
   <data name="CustomArg" xml:space="preserve">
-    <value>Launch argument</value>
+    <value>Argomento di avvio</value>
   </data>
   <data name="CustomArg_Description" xml:space="preserve">
-    <value>Argument to pass to the program when launching. [$P=path of the selected result ]</value>
+    <value>Argomento da passare al programma all'avvio. [$P=percorso del risultato selezionato]</value>
   </data>
   <data name="open_in_custom" xml:space="preserve">
-    <value>Open path in custom program (Ctrl+N)</value>
+    <value>Apri percorso nel programma esterno (Ctrl+N)</value>
   </data>
 </root>
