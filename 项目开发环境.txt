@@ -104,7 +104,7 @@ git checkout ***
 cd src/modules/launcher/Plugins/EverythingPowerToys
 # git remote -v
 # 从源头仓库拉取最新代码
-git fetch upstream 
+git fetch upstream
 # git branch
 # git branch -a
 # git checkout main
